@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercice 1</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </head>
+  <body ng-app="validForm" ng-controller="validCtrl">
+    <form name="form">
+      <input type="text" id="email" name="email" ng-pattern="regex" ng-keypress="testMail()" ng-model="email" />
+      <div class="valid" ng-show="resultTestMail"></div>
+      <div class="error" ng-show="!resultTestMail"></div>
+    </form>
+  </body>
+</html>

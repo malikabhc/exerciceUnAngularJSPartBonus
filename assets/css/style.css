@@ -1,0 +1,10 @@
+.valid{
+  background-color:green;
+  width:100px;
+  height:50px;
+}
+.error{
+  background-color:red;
+  width:100px;
+  height:50px;
+}
